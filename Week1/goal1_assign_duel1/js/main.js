@@ -3,7 +3,7 @@
 //self-executing function
 	(function(){
 
-console.log("Fight!!!");
+	console.log("Fight!!!");
 
 //player name
 
@@ -26,21 +26,21 @@ console.log("Fight!!!");
 
 	function fight () {
 
-	console.log ("in the fight function");
+	//console.log ("in the fight function");
 
-alert(playerOneName + ":" + playerOneHealth + "**Start**" + playerTwoName + ":" + 
-playerTwoHealth);
+	alert(playerOneName + ":" + playerOneHealth + "**Start**" + playerTwoName + ":" + 
+	playerTwoHealth);
 
 	for (var i = 0; i < 10; i++)
 	{
 
 //random formula is - Math.floor(Math.random()*(max-min)+min);
 
-	var minDamage1 = playerOneDamage * .5;
-	var minDamage2 = playerTwoDamage * .5;
-	
-	var f1 = Math.floor(Math.random()*(playerOneDamage-minDamage1)+minDamage1);
-	var f1 = Math.floor(Math.random()*(playerTwoDamage-minDamage2)+minDamage2);
+			var minDamage1 = player1Damage * .5;
+			var minDamage2 = player2Damage * .5;
+   
+            var f1 = Math.floor(Math.random()*(playerOneDamage-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(playerTwoDamage-minDamage2)+minDamage2);
 
 //console.log(f1);
 //console.log(f2);
@@ -55,6 +55,8 @@ playerTwoHealth);
 //console.log(playerTwoHealth);
 
 console.log(playerOneName+":"+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);
+	
+//check for victor
 	var result = winnerCheck();
 	console.log(result);
 	
@@ -63,10 +65,10 @@ console.log(playerOneName+":"+playerOneHealth + " " + playerTwoName+":"+playerTw
         alert(playerOneName+":"+playerOneHealth+"  **ROUND "+round+" OVER"+"**  "+playerTwoName+":"+playerTwoHealth);
 	}else{
 			alert(result);
-			break:
-			}
+			break;
+			};
 
-};
+		};
 };
 	
 
