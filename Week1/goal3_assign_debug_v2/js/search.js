@@ -61,7 +61,7 @@
 				};
             };
         };
-		         console.log(results)
+		         console.log(compare)
 		results.sort();
 		
 		// Check that matches were found, and run output functions
