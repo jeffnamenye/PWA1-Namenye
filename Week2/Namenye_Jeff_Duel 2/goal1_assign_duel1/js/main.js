@@ -1,4 +1,4 @@
-/***** Jeff Namenye 05/08/14 Duel 1****/
+/***** Jeff Namenye 05/17/14 Duel 2****/
  
 //self-executing function
 	(function(){
