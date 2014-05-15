@@ -7,8 +7,8 @@
 
 //player name and start of the array
 
-	var fighter1 = ("Kabal",20,100);
-	var fighter2 = ("Kratos",20,100);
+	var fighter1 = ["Kabal",20,100];
+	var fighter2 = ["Kratos",20,100];
 
 //player damage
 
@@ -30,7 +30,7 @@
         console.log("FIGHT!!!");
 
         // start of the fight game
-        alert(fighter1[0]+":"+fighter1[2]+"  **START**  "+fighter2[0+":"+fighter2[2]);
+        alert(fighter1[0]+":"+fighter1[2]+" *START* "+fighter2[0]+":"+fighter2[2]);
        
         for (var i = 0; i < 10; i++)
         {
@@ -38,15 +38,13 @@
 
 //random formula is - Math.floor(Math.random()*(max-min)+min);
 
-			var minDamage1 = fighter1 * .5;
-			var minDamage2 = fighter2 * .5;
+			var minDamage1 = fighter1[1] * .5;
+			var minDamage2 = fighter2[1] * .5;
    
-            var f1 = Math.floor(Math.random()*(fighter1-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(fighter2-minDamage2)+minDamage2);
+            var f1 = Math.floor(Math.random()*(fighter1[1]-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(fighter2[1]-minDamage2)+minDamage2);
 
-//console.log(f1);
-//console.log(f2);
-//console.log(i);
+
 
 //inflict damage
 
@@ -55,8 +53,9 @@
 	
 //console.log(playerOneHealth);
 //console.log(playerTwoHealth);
+   //combined as an array for out put
 
-console.log(playerOneName+":"+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);
+   console.log(fighter1[2]+""+fighter2[2]);
 	
 //check for victor
 	var result = winnerCheck();
