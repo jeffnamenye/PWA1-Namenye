@@ -27,7 +27,7 @@
 	function fight(){
 
         //make sure that it passed
-        console.log("FIGHT!!!");
+       // console.log("FIGHT!!!");
 
         // start of the fight game
         alert(fighter1[0]+":"+fighter1[2]+" *START* "+fighter2[0]+":"+fighter2[2]);
@@ -55,9 +55,10 @@
 //console.log(playerTwoHealth);
    //combined as an array for out put
 
-   console.log(fighter1[2]+""+fighter2[2]);
+   console.log(fighter1[2]+" "+fighter2[2]);
 	
 //check for victor
+//changed to work with array
 	var result = winnerCheck();
 	console.log(result);
 	
@@ -74,14 +75,14 @@
 	 
 	function winnerCheck(){
         var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1)
+        if (fighter1[2]<1 && fighter2[2]<1)
         {
             result = "You Both Die";
-        } else if(playerOneHealth<1){
-            result =playerTwoName+" WINS!!!"
-        } else if (playerTwoHealth<1)
+        } else if(fighter1[2]<1){
+            result =fighter2[0]+" WINS!!!"
+        } else if (fighter2[2]<1)
         {
-            result = playerOneName+" WINS!!!"
+            result = fighter1[0]+" WINS!!!"
         };
        return result;
     };
