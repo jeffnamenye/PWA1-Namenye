@@ -5,20 +5,20 @@
 
 	console.log("Fight!!!");
 
-//player name
+//player name and start of the array
 
-	var playerOneName = "Kabal";
-	var playerTwoName = "Kratos";
+	var playerOneName = ("Kabal",20,100);
+	var playerTwoName = ("Kratos",20,100);
 
 //player damage
 
-	var player1Damage = 20;
-	var player2Damage = 20;
+	//var player1Damage = 20;
+	//var player2Damage = 20;
 
 //player health
 
-	var playerOneHealth = 100; 
-	var playerTwoHealth = 100; 
+	//var playerOneHealth = 100;
+	//var playerTwoHealth = 100;
 
 	var round = 0;
 
