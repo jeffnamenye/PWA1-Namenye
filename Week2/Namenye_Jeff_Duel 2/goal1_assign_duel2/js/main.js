@@ -7,8 +7,8 @@
 
 //player name and start of the array
 
-	var playerOneName = ("Kabal",20,100);
-	var playerTwoName = ("Kratos",20,100);
+	var fighter1 = ("Kabal",20,100);
+	var fighter2 = ("Kratos",20,100);
 
 //player damage
 
@@ -20,13 +20,17 @@
 	//var playerOneHealth = 100;
 	//var playerTwoHealth = 100;
 
-	var round = 0;
+	var round = 1;
 
 //fight function
 
 	function fight(){
-       
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
+
+        //make sure that it passed
+        console.log("FIGHT!!!");
+
+        // start of the fight game
+        alert(fighter1[0]+":"+fighter1[2]+"  **START**  "+fighter2[0+":"+fighter2[2]);
        
         for (var i = 0; i < 10; i++)
         {
@@ -34,11 +38,11 @@
 
 //random formula is - Math.floor(Math.random()*(max-min)+min);
 
-			var minDamage1 = player1Damage * .5;
-			var minDamage2 = player2Damage * .5;
+			var minDamage1 = fighter1 * .5;
+			var minDamage2 = fighter2 * .5;
    
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);
+            var f1 = Math.floor(Math.random()*(fighter1-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(fighter2-minDamage2)+minDamage2);
 
 //console.log(f1);
 //console.log(f2);
@@ -46,8 +50,8 @@
 
 //inflict damage
 
-	playerOneHealth -=f1;
-	playerTwoHealth -=f2;
+  fighter1[2] -=f1;
+  fighter2[2] -=f2;
 	
 //console.log(playerOneHealth);
 //console.log(playerTwoHealth);
