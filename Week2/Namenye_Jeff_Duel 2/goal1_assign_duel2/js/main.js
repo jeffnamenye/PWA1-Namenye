@@ -72,7 +72,7 @@
 
 		};
 };
-	 
+	  //winner check with array
 	function winnerCheck(){
         var result="no winner";
         if (fighter1[2]<1 && fighter2[2]<1)
