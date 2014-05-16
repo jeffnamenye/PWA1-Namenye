@@ -41,7 +41,7 @@
             }else{
                 playGame();
             };
-
+             // counsole.log(validateInput);
         };
         // This is used to update the counter
         var playGame = function(){
@@ -49,8 +49,22 @@
             guessMade++;
             gameState =" Guess: " + guessMade + " , Remaining: " + guessRemain;
 
+            // looks at guess to random number
+            playerGuess = parseInt(input.value);
 
-        }
+            if(playerGuess > randomNum){
+                dom.output.innerHTML = "Thats to high, try agin"; + gameState;
+
+            }else if(playerGuess < randomNum){
+                dom.output.innerHTML = "Thats to low, try agin"+ gameState;
+            }else if(playerGuess === randomNum){
+                gameover(ture);
+            };
+                 //console.log (playerGuess);
+        } ;
+
+
+
 
 
     })();
