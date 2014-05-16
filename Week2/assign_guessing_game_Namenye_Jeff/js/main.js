@@ -31,7 +31,7 @@
 
         // validates player guess
         var validateInput = function(){
-        playerGuess =parseInt(dom.input.value);
+            playerGuess =parseInt(dom.input.value);
 
             if(isNaN(playerGuess)){
                 dom.output.innerHTML = "Please enter a number.";
@@ -42,10 +42,15 @@
                 playGame();
             };
 
-
-
         };
+        // This is used to update the counter
+        var playGame = function(){
+            guessRemain--;
+            guessMade++;
+            gameState =" Guess: " + guessMade + " , Remaining: " + guessRemain;
 
+
+        }
 
 
     })();
