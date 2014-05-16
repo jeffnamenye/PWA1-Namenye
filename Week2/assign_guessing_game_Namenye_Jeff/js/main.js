@@ -7,9 +7,6 @@
  * GUESSING GAME
  */
 
-//Game variables
-(function () {
-
     //Game variables
     (function () {
 
@@ -24,7 +21,30 @@
             output: document.querySelector("#output"),
             button: document.querySelector("button")
         };
+        // my math program for pick random number
+        var randomNum = Math.floor((Math.random() * 10) + 1);
 
+        var clickFn =  function (e){
+            console.log(guessRemain);
+             validateInput();
+         };
+
+        // validates player guess
+        var validateInput = function(){
+        playerGuess =parseInt(dom.input.value);
+
+            if(isNaN(playerGuess)){
+                dom.output.innerHTML = "Please enter a number.";
+
+            }else if (playerGuess < 1 || playerGuess > 10){
+                dom.output.innerHTML = "Please make your guess between 1 and 10.";
+            }else{
+                playGame();
+            };
+
+
+
+        };
 
 
 
