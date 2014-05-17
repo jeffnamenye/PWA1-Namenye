@@ -63,8 +63,26 @@
                  //console.log (playerGuess);
         } ;
 
+        var gamoeOver = function(win){
 
+          if (win){
+              dom.output.innerHTML
+                = "Yes, its" + randomNum + "!" +"<br>"
+                + "It only took you" + guessMade + "guesses.";
+          }else{
+              dom.output.innerHTML
+              = "You have no more guesses left!" + "<br>"
+              +"The actual number was:" + randomNum + ".";
+              };
+               dom.button.removeEventListener("click",clickFn, false);
+        };
 
+         var onKeyDown = function(e){
+             if(e.keyCode === 13){
+                 validateInput();
+             };
+         };
+        console.log(randomNum);
 
 
     })();
