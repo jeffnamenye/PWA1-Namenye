@@ -58,12 +58,12 @@
             }else if(playerGuess < randomNum){
                 dom.output.innerHTML = "Thats to low, try agin"+ gameState;
             }else if(playerGuess === randomNum){
-                gameover(ture);
+                gameOver(ture);
             };
                  //console.log (playerGuess);
         } ;
 
-        var gamoeOver = function(win){
+        var gameOver = function(win){
 
           if (win){
               dom.output.innerHTML
