@@ -62,7 +62,7 @@
             };
                  //console.log (playerGuess);
         } ;
-
+             //This is checking to see if the game is over
         var gameOver = function(win){
 
           if (win){
