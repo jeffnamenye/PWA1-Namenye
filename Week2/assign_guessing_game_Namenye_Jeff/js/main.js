@@ -84,5 +84,8 @@
          };
         console.log(randomNum);
 
+        dom.button.addEventListener("click",clickFn,false);
 
+window.addEventListener("keydown",onKeyDown, false
+        )
     })();
