@@ -82,9 +82,6 @@
         fighters[1].health -= f2;
 
         console.log(fighters[0].health, fighters[1].health);
-        {
-
-
 
 	
 //check for victor
@@ -92,12 +89,21 @@
 	var result = winnerCheck();
 	console.log(result);
 	
-	if(result ==="no winner"){ 
-	round++;
- 	alert(fighter1[0]+":"+fighter1[2]+"  *ROUND "+round+" OVER"+"*  "+fighter2[0]+":"+fighter2[2]);
-	}else{
-			alert(result);
-			break;
+	if(result ==="no winner")
+    {
+	   fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+       fighter1_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
+ 	//alert(fighter1[0]+":"+fighter1[2]+"  *ROUND "+round+" OVER"+"*  "+fighter2[0]+":"+fighter2[2]);
+
+    }else{
+			fighter1_txt.innerHTML = result;
+            fighter2_txt.innerHTML ="";
+
+
+        //disable the button
+        button.removeEventListener("click", fight, false);
+
+        document.querySelector(".buttonred").innerHTML = "DONE!";
 			};
 
 		};
