@@ -1,4 +1,4 @@
-/***** Jeff Namenye 05/17/14 Duel 2****/
+/***** Jeff Namenye 05/20/14 Duel 3****/
  
 //self-executing function
 	(function(){
@@ -47,6 +47,17 @@
 
 	var round = 1;
 
+
+  //This starts the dom for txt on top
+
+   round_txt.innerHTML = "Start by clicking the Fight Button!";
+   fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+   fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
+
+
+
+
+
 //fight function
 
 	function fight(){
@@ -55,9 +66,16 @@
        // console.log("FIGHT!!!");
 
         // start of the fight game
-        alert(fighter1[0]+":"+fighter1[2]+" *START* "+fighter2[0]+":"+fighter2[2]);
-       
-        for (var i = 0; i < 10; i++)
+        //alert(fighter1[0]+":"+fighter1[2]+" *START* "+fighter2[0]+":"+fighter2[2]);
+
+        fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
+        fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
+
+
+            //this is to determine damage done
+            var f1 =Math.floor(Math.random() * fighters[0].damage +fighters[0].damage *.5);
+            var f2 =Math.floor(Math.random() * fighters[1].damage +fighters[1].damage *.5);
+
         {
 
 
@@ -71,16 +89,17 @@
 
 
 
+
 //inflict damage
 
-  fighter1[2] -=f1;
-  fighter2[2] -=f2;
+  //fighter1[2] -=f1;
+  /fighter2[2] -=f2;
 	
 //console.log(playerOneHealth);
 //console.log(playerTwoHealth);
    //combined as an array for out put
 
-   console.log(fighter1[2]+" "+fighter2[2]);
+   //console.log(fighter1[2]+" "+fighter2[2]);
 	
 //check for victor
 //changed to work with array
@@ -96,7 +115,7 @@
 			};
 
 		};
-};
+
 	  //winner check with array
 	function winnerCheck(){
         var result="no winner";
