@@ -76,30 +76,16 @@
             var f1 =Math.floor(Math.random() * fighters[0].damage +fighters[0].damage *.5);
             var f2 =Math.floor(Math.random() * fighters[1].damage +fighters[1].damage *.5);
 
+
+        //this inflicts damage
+        fighters[0].health -= f1;
+        fighters[1].health -= f2;
+
+        console.log(fighters[0].health, fighters[1].health);
         {
 
 
-//random formula is - Math.floor(Math.random()*(max-min)+min);
 
-			var minDamage1 = fighter1[1] * .5;
-			var minDamage2 = fighter2[1] * .5;
-   
-            var f1 = Math.floor(Math.random()*(fighter1[1]-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(fighter2[1]-minDamage2)+minDamage2);
-
-
-
-
-//inflict damage
-
-  //fighter1[2] -=f1;
-  /fighter2[2] -=f2;
-	
-//console.log(playerOneHealth);
-//console.log(playerTwoHealth);
-   //combined as an array for out put
-
-   //console.log(fighter1[2]+" "+fighter2[2]);
 	
 //check for victor
 //changed to work with array
