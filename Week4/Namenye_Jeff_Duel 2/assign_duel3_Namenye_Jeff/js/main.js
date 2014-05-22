@@ -6,9 +6,34 @@
 	console.log("Fight!!!");
 
 //player name and start of the array
+	//var fighter1 = ["Kabal",20,100];
+	//var fighter2 = ["Kratos",20,100];
 
-	var fighter1 = ["Kabal",20,100];
-	var fighter2 = ["Kratos",20,100];
+ //my dom
+
+     var fighter1_txt = document.getElementById("Kabal").querySelector("p");
+     var fighter2_txt = document.getElementById("Kratos").querySelector("p");
+     var round_txt = document.querySelector("h4");
+     var button = document.getElementById("fight_btn");//button starts game
+
+        console.log()
+
+     //click event
+      button.addEventListener("click",fight,false);
+
+     var  fighters = [
+
+         {
+            name: "Kabal",
+            damage:20,
+            health:100
+         },
+         {
+             name: "Kratos",
+             damage:20,
+             health:100
+         }];
+
 
 //player damage
 
