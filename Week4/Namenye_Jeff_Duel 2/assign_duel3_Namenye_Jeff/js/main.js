@@ -11,8 +11,8 @@
 
  //my dom
 
-     var fighter1_txt = document.querySelector("#Kabal").querySelector("p");
-     var fighter2_txt = document.querySelector("#Kratos").querySelector("p");
+     var fighter1_txt = document.getElementById("Kabal").querySelector("p");
+     var fighter2_txt = document.getElementById("Kratos").querySelector("p");
      var round_txt = document.querySelector("h4");
      var button = document.getElementById("fight_btn");//button starts game
 
@@ -88,7 +88,11 @@
 //changed to work with array
 	var result = winnerCheck();
 	console.log(result);
-	
+
+        round_txt.innerHTML = "Round #" + round + "Results":
+        round++;
+
+
 	if(result ==="no winner")
     {
 	   fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
@@ -111,7 +115,7 @@
 	  //winner check with array
 	function winnerCheck(){
         var result="no winner";
-        if (fighters[0].health<1 && fighters[0]<1)
+        if (fighters[0].health<1 && fighters[1].health<1)
         {
             result = "You Both Die.....Better luck next time!!!";
         } else if(fighters[0].health < 1){
@@ -127,7 +131,7 @@
     };
 
     /*******  The program gets started below *******/
-    fight();
+
 
 })();
 
