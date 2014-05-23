@@ -4,7 +4,7 @@
     <list default="true" id="6bab295b-a5ef-424e-a264-135bb3424fcc" name="Default" comment="" />
     <ignored path="assign_duel3_Namenye_Jeff.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.js" changelist="6bab295b-a5ef-424e-a264-135bb3424fcc" time="1400839422921" ignored="false" />
+    <file path="/main.js" changelist="6bab295b-a5ef-424e-a264-135bb3424fcc" time="1400841249564" ignored="false" />
     <file path="/index.html" changelist="6bab295b-a5ef-424e-a264-135bb3424fcc" time="1400838706629" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="9" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.41990668">
+            <state line="101" column="6" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.39657855">
               <folding />
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="109" selection-end="109" vertical-scroll-proportion="-5.625">
+            <state line="2" column="13" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -53,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -246,14 +246,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="109" selection-end="109" vertical-scroll-proportion="-5.625">
+        <state line="2" column="13" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="9" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.41990668">
+        <state line="101" column="6" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.39657855">
           <folding />
         </state>
       </provider>
