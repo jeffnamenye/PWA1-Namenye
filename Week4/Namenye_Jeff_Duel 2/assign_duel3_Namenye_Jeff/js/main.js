@@ -11,8 +11,8 @@
 
  //my dom
 
-     var fighter1_txt = document.getElementById("Kabal").querySelector("p");
-     var fighter2_txt = document.getElementById("Kratos").querySelector("p");
+     var fighter1_txt = document.querySelector("#Kabal").querySelector("p");
+     var fighter2_txt = document.querySelector("#Kratos").querySelector("p");
      var round_txt = document.querySelector("h4");
      var button = document.getElementById("fight_btn");//button starts game
 
@@ -103,7 +103,7 @@
         //disable the button
         button.removeEventListener("click", fight, false);
 
-        document.querySelector(".buttonred").innerHTML = "DONE!";
+        document.querySelector(".buttonblue").innerHTML = "DONE!";
 			};
 
 		};
@@ -111,14 +111,17 @@
 	  //winner check with array
 	function winnerCheck(){
         var result="no winner";
-        if (fighter1[2]<1 && fighter2[2]<1)
+        if (fighters[0].health<1 && fighters[0]<1)
         {
-            result = "You Both Die";
-        } else if(fighter1[2]<1){
-            result =fighter2[0]+" WINS!!!"
-        } else if (fighter2[2]<1)
+            result = "You Both Die.....Better luck next time!!!";
+        } else if(fighters[0].health < 1){
+
+            result =fighters[1].name+" WINS!!!"
+
+        } else if (fighters[1].health < 1)
+
         {
-            result = fighter1[0]+" WINS!!!"
+            result = fighters[0].name +" WINS!!!"
         };
        return result;
     };
