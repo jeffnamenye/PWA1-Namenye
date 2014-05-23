@@ -89,8 +89,6 @@
 	var result = winnerCheck();
 	console.log(result);
 
-        round_txt.innerHTML = "Round #" + round + "Results":
-        round++;
 
 
 	if(result ==="no winner")
