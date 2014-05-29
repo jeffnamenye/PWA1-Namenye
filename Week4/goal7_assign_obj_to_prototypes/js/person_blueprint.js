@@ -18,17 +18,25 @@
         this.name = name;
 
         //sets up for a random person
-        this.action = Person.action[Math.floor((Math.floor() * Person.action.length)];
+        this.action = Person.actions[Math.floor((Math.floor() * Person.actions.length)];
 
+        //Set up for random job
+        this.job = Person.jobs[Math.floor(Math.floor() * Person.jobs.length)];
 
-        this
+        this.row =row;
+
+        var id = document.getElementById("r" + this.row +"c3");
+        id.innerHTML = this.action;
     }
 
-
-
-
-
-
-
+      //this will randomly choose action for each person
+    Person.prototype.update = function(){
+        if(Math.floor(Math.random() <.01)){
+            var i = Math.floor(Math.random() * Person.action.length);
+            this.action = Person.action[i];
+            var id = document.getElementById("r" + this.row + "c3");
+            id.innerHTML = this.action;
+        }
+    }
 
 })();
