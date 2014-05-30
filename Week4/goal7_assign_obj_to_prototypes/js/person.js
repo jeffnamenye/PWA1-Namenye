@@ -18,12 +18,12 @@
         this.name = name;
 
         //sets up for a random person
-        this.action = Person.actions[Math.floor((Math.floor() * Person.actions.length)];
+        this.action = Person.action[Math.floor(Math.random() * Person.action.length)];
 
         //Set up for random job
-        this.job = Person.jobs[Math.floor(Math.floor() * Person.jobs.length)];
+        this.job = Person.jobs[Math.floor(Math.random() * Person.jobs.length)];
 
-        this.row =row;
+        this.row = row;
 
         var id = document.getElementById("r" + this.row +"c3");
         id.innerHTML = this.action;
