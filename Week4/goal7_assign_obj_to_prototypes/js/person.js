@@ -18,7 +18,7 @@
         this.name = name;
 
         //sets up for a random person
-        this.action = Person.action[Math.floor(Math.random() * Person.action.length)];
+        this.action = Person.actions[Math.floor(Math.random() * Person.actions.length)];
 
         //Set up for random job
         this.job = Person.jobs[Math.floor(Math.random() * Person.jobs.length)];
