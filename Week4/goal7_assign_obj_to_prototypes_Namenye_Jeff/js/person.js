@@ -9,8 +9,8 @@
      window.Person=Person;
 
      //shows my job choices and action that they will do
-    Person.jobs =("Chef","Electronic Tech","Student","Artist");
-    Person.actions = ("Cooking","Fixing","Studying","Painting");
+    Person.jobs =["Chef","Electronic Tech","Student","Artist"];
+    Person.actions = ["Cooking","Fixing","Studying","Painting"];
 
     function Person(name,row){
         console.log("Person Created: ",name);
@@ -32,8 +32,8 @@
       //this will randomly choose action for each person
     Person.prototype.update = function(){
         if(Math.floor(Math.random() <.01)){
-            var i = Math.floor(Math.random() * Person.action.length);
-            this.action = Person.action[i];
+            var i = Math.floor(Math.random() * Person.actions.length);
+            this.action = Person.actions[i];
             var id = document.getElementById("r" + this.row + "c3");
             id.innerHTML = this.action;
         }
